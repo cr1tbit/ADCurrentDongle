@@ -1505,7 +1505,7 @@
   (no_connect (at 383.54 124.46) (uuid 2c95b9a6-9c71-4108-9cde-57ddfdd2dd19))
   (no_connect (at 383.54 134.62) (uuid 475ed8b3-90bf-48cd-bce5-d8f48b689541))
   (no_connect (at 180.34 91.44) (uuid 700606dd-0bbd-4dd8-95a9-d91621edd33f))
-  (no_connect (at 180.34 101.6) (uuid 700606dd-0bbd-4dd8-95a9-d91621edd33f))
+  (no_connect (at 180.34 101.6) (uuid 700606dd-0bbd-4dd8-95a9-d91621edd340))
   (no_connect (at 383.54 66.04) (uuid 718e5c6d-0e4c-46d8-a149-2f2bfc54c7f1))
   (no_connect (at 383.54 139.7) (uuid 7b766787-7689-40b8-9ef5-c0b1af45a9ae))
   (no_connect (at 383.54 121.92) (uuid 8486c294-aa7e-43c3-b257-1ca3356dd17a))
@@ -2877,7 +2877,7 @@
   (symbol (lib_id "Device:R_Small") (at 173.99 71.12 270) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-00005fb58ac0)
-    (property "Reference" "R7" (id 0) (at 170.18 69.85 90))
+    (property "Reference" "R6" (id 0) (at 170.18 69.85 90))
     (property "Value" "3k3" (id 1) (at 179.07 69.85 90))
     (property "Footprint" "Resistor_SMD:R_0402_1005Metric" (id 2) (at 173.99 71.12 0)
       (effects (font (size 1.27 1.27)) hide)
@@ -3249,7 +3249,7 @@
   (symbol (lib_id "Device:R_Small") (at 173.99 86.36 270) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-00005fbde573)
-    (property "Reference" "R6" (id 0) (at 170.18 85.09 90))
+    (property "Reference" "R7" (id 0) (at 170.18 85.09 90))
     (property "Value" "330" (id 1) (at 179.07 85.09 90))
     (property "Footprint" "Resistor_SMD:R_0402_1005Metric" (id 2) (at 173.99 86.36 0)
       (effects (font (size 1.27 1.27)) hide)
@@ -4003,7 +4003,7 @@
   (symbol (lib_id "Jumper:Jumper_2_Open") (at 389.89 43.18 270) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-00006014f55c)
-    (property "Reference" "JP7" (id 0) (at 392.3792 42.0116 90)
+    (property "Reference" "JP5" (id 0) (at 392.3792 42.0116 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "Jumper_2_Open" (id 1) (at 392.3792 44.323 90)
@@ -4076,7 +4076,7 @@
   (symbol (lib_id "Switch:SW_Push_DPDT") (at 349.25 82.55 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid 07030f91-3374-4871-b526-4680a1f088d7)
-    (property "Reference" "SW2" (id 0) (at 349.25 70.5825 0))
+    (property "Reference" "SW3" (id 0) (at 349.25 70.5825 0))
     (property "Value" "CH2_DPDT" (id 1) (at 349.25 73.3576 0))
     (property "Footprint" "Button_Switch_SMD:SW_DPDT_CK_JS202011JCQN" (id 2) (at 349.25 77.47 0)
       (effects (font (size 1.27 1.27)) hide)
@@ -4127,7 +4127,7 @@
   (symbol (lib_id "Switch:SW_Push_DPDT") (at 185.42 93.98 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 5d49d8db-07c2-4dac-b489-ffb4c77b0a1d)
-    (property "Reference" "SW?" (id 0) (at 187.96 92.71 0))
+    (property "Reference" "SW1" (id 0) (at 187.96 92.71 0))
     (property "Value" "CURR_LP_SEL" (id 1) (at 193.04 95.25 0))
     (property "Footprint" "Button_Switch_SMD:SW_DPDT_CK_JS202011JCQN" (id 2) (at 185.42 88.9 0)
       (effects (font (size 1.27 1.27)) hide)
@@ -4146,7 +4146,7 @@
   (symbol (lib_id "Switch:SW_Push_DPDT") (at 347.98 49.53 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid 7d0ebe33-f0fd-480e-8246-b968f71087af)
-    (property "Reference" "SW1" (id 0) (at 347.98 37.5625 0))
+    (property "Reference" "SW2" (id 0) (at 347.98 37.5625 0))
     (property "Value" "CH1_DPDT" (id 1) (at 347.98 40.3376 0))
     (property "Footprint" "Button_Switch_SMD:SW_DPDT_CK_JS202011JCQN" (id 2) (at 347.98 44.45 0)
       (effects (font (size 1.27 1.27)) hide)
@@ -4471,7 +4471,7 @@
       (reference "JP4") (unit 1) (value "Jumper_2_Open") (footprint "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical")
     )
     (path "/00000000-0000-0000-0000-00006014f55c"
-      (reference "JP7") (unit 1) (value "Jumper_2_Open") (footprint "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical")
+      (reference "JP5") (unit 1) (value "Jumper_2_Open") (footprint "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical")
     )
     (path "/00000000-0000-0000-0000-00005fbed4cf"
       (reference "R1") (unit 1) (value "5/0.1%") (footprint "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder")
@@ -4488,11 +4488,11 @@
     (path "/00000000-0000-0000-0000-00005fb4ca25"
       (reference "R5") (unit 1) (value "100") (footprint "Resistor_SMD:R_0402_1005Metric")
     )
-    (path "/00000000-0000-0000-0000-00005fbde573"
-      (reference "R6") (unit 1) (value "330") (footprint "Resistor_SMD:R_0402_1005Metric")
-    )
     (path "/00000000-0000-0000-0000-00005fb58ac0"
-      (reference "R7") (unit 1) (value "3k3") (footprint "Resistor_SMD:R_0402_1005Metric")
+      (reference "R6") (unit 1) (value "3k3") (footprint "Resistor_SMD:R_0402_1005Metric")
+    )
+    (path "/00000000-0000-0000-0000-00005fbde573"
+      (reference "R7") (unit 1) (value "330") (footprint "Resistor_SMD:R_0402_1005Metric")
     )
     (path "/00000000-0000-0000-0000-00005fbde742"
       (reference "R8") (unit 1) (value "330") (footprint "Resistor_SMD:R_0402_1005Metric")
@@ -4530,14 +4530,14 @@
     (path "/00000000-0000-0000-0000-000060177f4e"
       (reference "R19") (unit 1) (value "50") (footprint "Resistor_SMD:R_0805_2012Metric")
     )
+    (path "/5d49d8db-07c2-4dac-b489-ffb4c77b0a1d"
+      (reference "SW1") (unit 1) (value "CURR_LP_SEL") (footprint "Button_Switch_SMD:SW_DPDT_CK_JS202011JCQN")
+    )
     (path "/7d0ebe33-f0fd-480e-8246-b968f71087af"
-      (reference "SW1") (unit 1) (value "CH1_DPDT") (footprint "Button_Switch_SMD:SW_DPDT_CK_JS202011JCQN")
+      (reference "SW2") (unit 1) (value "CH1_DPDT") (footprint "Button_Switch_SMD:SW_DPDT_CK_JS202011JCQN")
     )
     (path "/07030f91-3374-4871-b526-4680a1f088d7"
-      (reference "SW2") (unit 1) (value "CH2_DPDT") (footprint "Button_Switch_SMD:SW_DPDT_CK_JS202011JCQN")
-    )
-    (path "/5d49d8db-07c2-4dac-b489-ffb4c77b0a1d"
-      (reference "SW?") (unit 1) (value "CURR_LP_SEL") (footprint "Button_Switch_SMD:SW_DPDT_CK_JS202011JCQN")
+      (reference "SW3") (unit 1) (value "CH2_DPDT") (footprint "Button_Switch_SMD:SW_DPDT_CK_JS202011JCQN")
     )
     (path "/00000000-0000-0000-0000-00005fe5ec53"
       (reference "U1") (unit 1) (value "INA186AxDDxx") (footprint "Package_TO_SOT_SMD:Texas_R-PDSO-G6")
