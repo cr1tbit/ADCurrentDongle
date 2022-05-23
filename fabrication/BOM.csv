@@ -1,0 +1,17 @@
+Comment,Designator,Footprint,LCSC
+100n,"C1,C3,C4,C7",Capacitor_SMD:C_0402_1005Metric,
+22n,"C2,C5,C6,C8,C9",Capacitor_SMD:C_0402_1005Metric,C1532
+1N4148WT,"D1,D2",Diode_SMD:D_SOD-523,
+LED,"D3,D4,D5",LED_SMD:LED_0603_1608Metric,C2290
+5/0.1%,R1,Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder,
+100k,"R11,R14,R15",Resistor_SMD:R_0402_1005Metric,
+1Meg,"R12,R13",Resistor_SMD:R_0402_1005Metric,
+50,"R18,R19",Resistor_SMD:R_0805_2012Metric,
+1/0.1%,R2,Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder,C17928
+0.2/0.1%,R3,Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder,C25336
+100,"R4,R5",Resistor_SMD:R_0402_1005Metric,
+330,"R6,R8",Resistor_SMD:R_0402_1005Metric,
+3k3,"R7,R9,R10,R16,R17,R20",Resistor_SMD:R_0402_1005Metric,
+SWITCHES,"SW1,SW2, SW3, SW4",Button_Switch_SMD:SW_DPDT_CK_JS202011JCQN,C221665
+INA186AxDDxx,"U1,U2",Package_TO_SOT_SMD:Texas_R-PDSO-G6,
+MCP6004,U3,Package_SO:SOIC-14_3.9x8.7mm_P1.27mm,
