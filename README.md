@@ -19,15 +19,19 @@ What this device is NOT:
 * Super accurate, self calibrating current probe
 * Lab-ready device
 
+Stuff to improve:
+* The LEDs will not work when system is powered by 1.8V - but it's not fixable easily.
 
 ## Some pics:
 
 ![Render](Imgs/CurrentDongle.png)
-Render of the current revision
+PCB render
 
+![Render](Imgs/photo2.jpg)
+PCB IRL
 
 ![Render](Imgs/photo.jpg)
-Photo of the previous revision
+PCB connected to the Analog Discovery 2
 
 
 
