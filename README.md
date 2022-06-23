@@ -24,17 +24,17 @@ Stuff to improve:
 
 ## Some pics:
 
+![Render](Imgs/photo.jpg)
+
+PCB connected to the Analog Discovery 2
+
 ![Render](Imgs/CurrentDongle.png)
+
 PCB render
 
 ![Render](Imgs/photo2.jpg)
+
 PCB IRL
-
-![Render](Imgs/photo.jpg)
-PCB connected to the Analog Discovery 2
-
-
-
 
 
 
