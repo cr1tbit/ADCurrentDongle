@@ -27,3 +27,17 @@ fp-info-cache
 
 # Fab outputs
 *.zip
+
+# app
+software/.venv/
+software/sessions/
+__pycache__/
+*.egg-info/
+
+
+# KiCad per-user view settings
+*.kicad_prl
+
+# 3D exports of the board (regenerate from the PCB)
+ADCurrentDongle.step
+ADCurrentDongle.wrl

@@ -1,0 +1,31 @@
+{
+  "name": "M5 pulse response (single-shot)",
+  "vdc": 3.3,
+  "shunt": 0.5,
+  "sw3": "2k",
+  "hi_channel": 1,
+  "capture": {
+    "rate": 10e6,
+    "samples": 16384,
+    "volts_range": 5.0,
+    "filt": "decimate",
+    "trigger": "generator",
+    "position_s": 0.72e-3,
+    "timeout_s": 0.0,
+    "digital": true,
+    "digital_pins": {"a_clip": 7, "b_clip": 15}
+  },
+  "steps": [
+    {"op": "supply", "enable": true},
+    {"op": "settle", "seconds": 1.0},
+    {"op": "capture", "label": "M5_10us_2k",  "gen": {"mode": "pulses", "high_v": 5.0, "width_s": 10e-6,  "period_s": 100e-6, "count": 1}, "note": "single 10 us pulse, ~48 mA, 67.9 ohm via BSS138; window -0.1 .. +1.5 ms"},
+    {"op": "settle", "seconds": 0.1},
+    {"op": "capture", "label": "M5_50us_2k",  "gen": {"mode": "pulses", "high_v": 5.0, "width_s": 50e-6,  "period_s": 500e-6, "count": 1}, "note": "single 50 us pulse; window -0.1 .. +1.5 ms"},
+    {"op": "settle", "seconds": 0.1},
+    {"op": "capture", "label": "M5_200us_2k", "gen": {"mode": "pulses", "high_v": 5.0, "width_s": 200e-6, "period_s": 2e-3, "count": 1}, "note": "single 200 us pulse; window -0.1 .. +1.5 ms"},
+    {"op": "settle", "seconds": 0.1},
+    {"op": "capture", "label": "M5_1ms_2k",   "gen": {"mode": "pulses", "high_v": 5.0, "width_s": 1e-3,   "period_s": 10e-3, "count": 1}, "note": "single 1 ms pulse; window -0.1 .. +1.5 ms"},
+    {"op": "settle", "seconds": 0.1},
+    {"op": "capture", "label": "M5_1ms_hold_2k", "gen": {"mode": "pulses", "high_v": 5.0, "width_s": 1e-3, "period_s": 10e-3, "count": 1}, "capture": {"rate": 1e6, "position_s": 7.19e-3}, "note": "1 ms pulse at 1 MS/s, window -1 .. +15.4 ms: clip flag hold time"}
+  ]
+}

@@ -9,10 +9,12 @@ It was made for these reasons:
 
 There's an simple bulit-in comparator circuit that blinks a LED when the channel range is reached. The high-accuracy channel usually also blinks when the DUT performs some action, which is also an useful feedback I guess.
 
-In `scripts` folder, there's an example `digilent waveforms` script that I use for current measurement. Some things to note:
-* programmable voltage sources on `AD2` are noisy as hell when the current is under a couple of milliamps - hence the resistor in this area.
+In `Calib` folder, there's an example `digilent waveforms` workspace that I use for current measurement (the `software` folder now has a standalone app that replaces it). Some things to note:
+* programmable voltage sources on `AD2` are noisy as hell when the current is under a couple of milliamps - hence the resistor in this area. Keep `JP7` closed: without the pre-load, V+ delivers current in ~8 mA bursts at near-zero load (see M8 and M9 in the lab report).
 * the voltage offset errors from `INA186`s can be easilly callibrated out, using the provided script.
 
+
+Measurements, verification and known issues of this revision: [ADCurrentDongle_LabSession](https://github.com/cr1tbit/ADCurrentDongle_LabSession) (lab report).
 
 What this device is NOT:
 * Crosstalk-free oscilloscope adapter
